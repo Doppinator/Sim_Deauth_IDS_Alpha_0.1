@@ -8,5 +8,6 @@ def start_ids():
     while True:
         raw_packet = capture_packet()
         packet = parse_packet(raw_packet)
-        # Add logic to analyze the packet for potential threats
+        # Display the parsed packet details
+        print(f"Captured Packet: {packet}")
         pass
