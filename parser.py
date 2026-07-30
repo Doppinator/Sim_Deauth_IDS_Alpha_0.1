@@ -1,3 +1,6 @@
+from time import time
+
+
 def parse_packet(raw_packet):
     """ Parse a raw network packet and extract its details.
     
@@ -10,8 +13,10 @@ def parse_packet(raw_packet):
     # Placeholder for packet parsing logic
     packet_details = {
         "source_mac": "00:1A:2B:3C:4D:5E",
+        "frame_type": "management",
+        "frame_subtype": "deauthentication",
         "destination_mac": "5E:4D:3C:2B:1A:00",
         "protocol": "TCP",
-        "type": "data"
+        "length": len(raw_packet),
     }
     return packet_details

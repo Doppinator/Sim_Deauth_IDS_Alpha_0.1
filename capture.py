@@ -6,4 +6,4 @@ def capture_packet():
         bytes: The raw network packet data.
     """
     # Placeholder for packet capture logic
-    return b" simulated raw packet data "
+    return b"simulated raw packet data"
